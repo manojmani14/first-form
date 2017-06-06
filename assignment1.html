@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+<script>
+function myfunction(){
+var x = document.forms["myForm"]["Uname"].value;
+var inValid = new regExp(/\s+?/g);
+if(inValid.test(x))
+{
+alert("Spaces not allowed in password field");
+}
+var checkboxs=document.forms["myForm"];
+    
+    
+}
+</script>
+</head>
+<body>
+<form name="myForm">
+<p id="fname">First Name: <input type="text" id="Fname" required></p></br>
+<p>Last Name: <input type="text" id="Lname" required> </input> </p></br>
+<p>Username: <input type="text" id="Uname" placeholder="Enter username here" required> </input> </p></br>
+<p>Password: <input type="password" id="Pwd" placeholder="*********" required> </input> </p></br>
+</br>
+ Country: <select required>
+	<option value="">Select...</option>
+	<option value="india">India</option>
+	<option value="usa">United States</option>
+	<option value="uk">United Kingdom</option>
+	<option value="china">China</option>
+	<option value="southkorea">South Korea</option>
+</select></br></br>
+Hobbies: </br></br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="c1" value="painting">Painting</input></br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="c1" value="playing">Playing</input></br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="c1" value="working">Working</input></br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox" name="c1" value="watching">Watching</input></br>
+<p> <button onclick="myfunction()"> Submit</button></p>
+
+</form>
+</body>
+</html>
